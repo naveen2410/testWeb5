@@ -21,7 +21,9 @@ public class MyResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
-        return "Got it!";
+    	TestMIIClient ncg = new TestMIIClient();			
+		
+        return "Got it!" + ncg.executeGETService();
     }
     
     @POST
