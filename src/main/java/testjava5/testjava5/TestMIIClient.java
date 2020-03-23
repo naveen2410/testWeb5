@@ -17,7 +17,7 @@ public class TestMIIClient {
 
 	public String executeGETService(){
 		String output = "Reached MII Server !!";
-		/*try {
+		try {
 
 			URL url = new URL("http://dummy.restapiexample.com/api/v1/employees");
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -41,7 +41,7 @@ public class TestMIIClient {
 		} catch (IOException e) {
 
 			e.printStackTrace();
-		}*/
+		}
 		return output;
 	}
 }
