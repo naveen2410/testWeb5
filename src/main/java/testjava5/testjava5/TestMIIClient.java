@@ -16,17 +16,18 @@ public class TestMIIClient {
 	}
 
 	public String executeGETService(){
-		String output = "Reached MII Server !!";
+		String output = "Reached MII Server !! 1";
+		String outputCode = "0";
 		try {
 
-			URL url = new URL("http://dummy.restapiexample.com/api/v1/employees");
+			URL url = new URL("http://gbssapsandapps2:50200/XMII/Illuminator?service=scheduler&mode=List&content-type=text/xml&IllumLoginName=som&IllumLoginPassword=password@1");
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			//conn.setRequestMethod("GET");
 			//conn.
 			BufferedReader br = new BufferedReader(new InputStreamReader(
 					(conn.getInputStream())));
 
-			
+			outputCode = "Code : "+conn.getResponseCode();
 
 			while ((output = br.readLine()) != null) {
 
@@ -42,6 +43,6 @@ public class TestMIIClient {
 
 			e.printStackTrace();
 		}
-		return output;
+		return outputCode;
 	}
 }
