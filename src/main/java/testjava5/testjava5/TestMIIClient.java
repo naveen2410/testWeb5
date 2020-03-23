@@ -22,7 +22,7 @@ public class TestMIIClient {
 			URL url = new URL("http://10.116.65.81:50200/XMII/Illuminator?service=scheduler&mode=List&content-type=text/xml&IllumLoginName=som&IllumLoginPassword=password@1");
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			//conn.setRequestMethod("GET");
-
+			//conn.
 			BufferedReader br = new BufferedReader(new InputStreamReader(
 					(conn.getInputStream())));
 
