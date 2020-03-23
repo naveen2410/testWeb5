@@ -32,6 +32,7 @@ public class TestMIIClient {
 			while ((output = br.readLine()) != null) {
 
 				System.out.print(output);
+				return output;
 			}
 			conn.disconnect();
 
