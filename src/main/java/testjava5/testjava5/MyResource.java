@@ -23,7 +23,7 @@ public class MyResource {
     public String getIt() {
     	TestMIIClient ncg = new TestMIIClient();			
 		
-        return "Got it! 4 - " + ncg.executeGETService();
+        return "Got it! 5 - " + ncg.executeGETService();
     }
     
     
