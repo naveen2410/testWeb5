@@ -43,6 +43,6 @@ public class TestMIIClient {
 
 			e.printStackTrace();
 		}
-		return outputCode;
+		return output;
 	}
 }
