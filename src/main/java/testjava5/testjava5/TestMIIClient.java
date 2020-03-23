@@ -12,11 +12,11 @@ public class TestMIIClient {
 	public static void main(String[] args) {
 
 		TestMIIClient ncg = new TestMIIClient();			
-		ncg.executeGETService();
+		System.out.println("hiuhiuij"+ ncg.executeGETService());
 	}
 
 	public String executeGETService(){
-		String output = "Reached MII Server !! 1";
+		String output1 = "Reached MII Server !! 4";
 		String outputCode = "0";
 		try {
 
@@ -28,11 +28,12 @@ public class TestMIIClient {
 					(conn.getInputStream())));
 
 			outputCode = "Code : "+conn.getResponseCode();
-
+			String output;
 			while ((output = br.readLine()) != null) {
 
-				System.out.print(output);
-				return output;
+				//System.out.print(output);
+				output1 = output;
+				//return output;
 			}
 			conn.disconnect();
 
@@ -44,6 +45,6 @@ public class TestMIIClient {
 
 			e.printStackTrace();
 		}
-		return output;
+		return outputCode + " ==== " +output1;
 	}
 }
