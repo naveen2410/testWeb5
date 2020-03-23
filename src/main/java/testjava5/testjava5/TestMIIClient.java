@@ -17,7 +17,7 @@ public class TestMIIClient {
 
 	public String executeGETService(){
 		String output = "Reached MII Server !! 1";
-		String outputCode = "0";
+		/*String outputCode = "0";
 		try {
 
 			URL url = new URL("http://gbssapsandapps2:50200/XMII/Illuminator?service=scheduler&mode=List&content-type=text/xml&IllumLoginName=som&IllumLoginPassword=password@1");
@@ -42,7 +42,7 @@ public class TestMIIClient {
 		} catch (IOException e) {
 
 			e.printStackTrace();
-		}
-		return outputCode;
+		}*/
+		return output;
 	}
 }

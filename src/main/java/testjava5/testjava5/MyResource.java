@@ -26,11 +26,6 @@ public class MyResource {
         return "Got it!" + ncg.executeGETService();
     }
     
-    @POST
-    @Produces(MediaType.TEXT_PLAIN)
-    public String getItPost() {
-        return "Got it Post!";
-    }
     
     
 }
