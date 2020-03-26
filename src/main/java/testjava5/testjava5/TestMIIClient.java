@@ -21,7 +21,8 @@ public class TestMIIClient {
 		try {
 
 			//URL url = new URL("http://gbssapsandapps2:50200/XMII/Illuminator?service=scheduler&mode=List&content-type=text/xml&IllumLoginName=som&IllumLoginPassword=password@1");
-			URL url = new URL("http://dummy.restapiexample.com/api/v1/employees");
+			//URL url = new URL("http://dummy.restapiexample.com/api/v1/employees");
+			URL url = new URL("http://10.116.65.81:50200/XMII/Illuminator?service=scheduler&mode=List&content-type=text/xml&IllumLoginName=som&IllumLoginPassword=password@1");
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			//conn.setRequestMethod("GET");
 			//conn.
