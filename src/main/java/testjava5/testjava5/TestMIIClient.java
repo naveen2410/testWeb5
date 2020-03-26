@@ -40,12 +40,12 @@ public class TestMIIClient {
 		} catch (MalformedURLException e) {
 
 			e.printStackTrace();
-			output1 = e.getMessage();
+			output1 = e.getMessage()+e.getLocalizedMessage()+e.toString();
 
 		} catch (IOException e) {
 
 			e.printStackTrace();
-			output1 = e.getMessage();
+			output1 = e.getMessage()+e.getLocalizedMessage()+e.toString();
 		}
 		return outputCode + " ==== " +output1;
 	}
